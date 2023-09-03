@@ -1,0 +1,42 @@
+/* components/list/items.tsx */
+.list-items {
+  padding: 1rem;
+  background: #fff;
+}
+
+.list-items figcaption article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-items figcaption article h3 {
+  font-size: 1rem;
+}
+.list-items figcaption article ul {
+  display: flex;
+  gap: 0.5rem;
+}
+.list-items figcaption article ul li {
+  padding: 0.25rem 0.5rem;
+  border:1px solid var(--main-border-color);
+  font-size: 0.75rem;
+}
+
+.list-items figcaption > ul {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.list-items figcaption > ul li {
+  position: relative;
+  font-size: 0.75rem;
+}
+.list-items figcaption > ul li ~ li::after {
+  content: '';
+  width: 1px;
+  height: 70%;
+  border-left: 2px solid var(--main-border-color);
+  position: absolute;
+  left: -5px;
+  top: 20%;
+}

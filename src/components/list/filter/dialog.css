@@ -1,0 +1,33 @@
+/* componsnts/list/dialog.tsx */
+.list-dialog {
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid var(--main-border-color);
+  box-sizing: border-box;
+  z-index:10;
+}
+
+.list-dialog > button {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.list-dialog fieldset {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+}
+
+.list-dialog fieldset button {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--main-border-color);
+  cursor: pointer;
+}
+
+.list-dialog fieldset button.active {
+  background: var(--main-text-color);
+  color: #fff;
+}
